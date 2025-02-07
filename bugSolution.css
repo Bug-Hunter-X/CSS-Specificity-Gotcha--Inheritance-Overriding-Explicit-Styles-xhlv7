@@ -1,0 +1,22 @@
+The solution involves understanding CSS specificity and using more specific selectors to target the paragraph within the div.
+
+```css
+div {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+/* Solution: Use a more specific selector */
+div p {
+  color: green;
+}
+
+/*Alternative solution(use with caution) : using !important */
+div p {
+  color: green !important;
+}
+```
+By using `div p`, we ensure that the paragraph styling within the div takes precedence.
